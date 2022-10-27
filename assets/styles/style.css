@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px 30px;
+    background-color: #333;   
+    color: #fff;
+}
+
+.petStory_logo{
+	padding-left: 50px;
+}
+
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 15px; 
+    font-size: 1.2em;  
+}
+
+
+
+
+
+
+.backstage{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1161px;
+	height: 403px;
+}
+
+.backstage > .image{
+	flex: 1;
+	text-align-last: center;
+}
+.backstage > .text{
+	flex: 1;
+}
+
+
+
+
+
+
+
+
+.pets{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pets_button{
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+
+
+.grid{
+  width:  1158px;
+  height: 872px;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 28%);
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
