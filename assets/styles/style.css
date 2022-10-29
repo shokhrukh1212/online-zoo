@@ -4,7 +4,13 @@
 	box-sizing: border-box;
 }
 
+
+/*starting header page*/
 header{
+    /* width: 1600px;
+    height: 80px;
+    background: #000000;
+    backdrop-filter: blur(2px); */
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -30,25 +36,155 @@ header{
 
 
 
+/*starting main page*/
 
+main {
+  background-image: url("../images/panda.png");
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main img{
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  left: calc(50% - 465px/2 + 239.5px);
+  top: 92px;
+  border-radius: 50%;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+main .watchfavorite{
+  position: absolute;
+  width: 500.31px;
+  height: 400px;
+  left: calc(50% - 500.31px/2 + 330.15px);
+  top: 166px;
+
+}
+
+main .watchfavorite h2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 106.496px;
+  line-height: 75%;
+  /* or 80px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+main button {
+  position: absolute;
+  width: 298px;
+  height: 54px;
+  left: calc(50% - 298px/2 + 332px);
+  top: 626px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border-radius: 25px;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+main button:hover{
+  cursor: pointer;
+}
+
+
+
+/*starting backstage section*/
 .backstage{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  column-gap: 70px;
 	width: 1161px;
 	height: 403px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 0;
+  margin-bottom: 200px;
 }
 
 .backstage > .image{
 	flex: 1;
-	text-align-last: center;
+  width: 609px;
+  height: 403px;
 }
 .backstage > .text{
 	flex: 1;
+  width: 609px;
+  height: 403px;
+}
+
+.backstage > .text > h2{
+	font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #333B41;
+  margin-bottom: 20px;
+}
+
+.backstage > .text > #sitefounded {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333B41;
+  margin-bottom: 40px;
+}
+
+.backstage > .text > #howwork {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+color: #333B41;
+margin-bottom: 25px;
+}
+
+.backstage > .text > #maingoal {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #333B41;
+}
+
+
+.backstage .flowerfoto{
+  position: absolute;
+  right: 0;
 }
 
 
 
+
+
+/*starting pets section*/
 .pets{
 	display: flex;
 	justify-content: center;
@@ -69,14 +205,45 @@ header{
   grid-column-gap: 20px;
   grid-row-gap: 10px;
   justify-content: space-between;
-  grid-template-columns: repeat(3, 28%);
+  grid-template-columns: repeat(3, 366px);
   background-color: #2196F3;
   padding: 10px;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
   font-size: 30px;
+  text-align: center;
+  height: 426px;
+  border-radius: 5px;
+}
+
+.grid-item h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.grid-item #wherefrom{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #000000;
+}
+
+
+.pets .pets_button{
+  width: 62px;
+  height: 62px;
+  right: 0px;
+  top: 0px;
+  background-color: #F9804B;
+  border-radius: 50%;
   text-align: center;
 }
