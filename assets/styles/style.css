@@ -7,31 +7,56 @@
 
 /*starting header page*/
 header{
-    /* width: 1600px;
-    height: 80px;
-    background: #000000;
-    backdrop-filter: blur(2px); */
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 20px 30px;
-    background-color: #333;   
-    color: #fff;
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
 }
 
-.petStory_logo{
-	padding-left: 50px;
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 17%;
+  padding-right: 10%;
 }
 
-.nav_links{
-    list-style: none;
-}
-.nav_links li{
-    display: inline-block;
-    padding: 0px 15px; 
-    font-size: 1.2em;  
+.logo1{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  width: 82px;
+  height: 52px;
+  border: 1px solid #fff;
+  text-align: center;
 }
 
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 30px;
+
+}
+
+nav ul li span{
+  color: #F9804B;
+}
+
+nav ul li a{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.logo2{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
 
 
 
@@ -111,6 +136,7 @@ main button:hover{
 
 
 /*starting backstage section*/
+
 .backstage{
 	display: flex;
 	align-items: center;
@@ -185,18 +211,14 @@ color: #333B41;
 
 
 /*starting pets section*/
+
 .pets{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  position: relative;
+  margin-bottom: 280px;
 }
-
-.pets_button{
-	font-size: 1.2em;
-	padding: 10px;
-}
-
-
 
 .grid{
   width:  1158px;
@@ -241,9 +263,141 @@ color: #000000;
 .pets .pets_button{
   width: 62px;
   height: 62px;
-  right: 0px;
-  top: 0px;
   background-color: #F9804B;
   border-radius: 50%;
   text-align: center;
+}
+
+.pets button{
+  position: absolute;
+  bottom: -180px;
+  width: 298px;
+  height: 54px;
+  background: #FE9013;
+  border-radius: 25px;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
+
+.pets button:hover{
+  cursor: pointer;
+}
+
+.pets .pets-images{
+  position: absolute;
+  bottom: -280px;
+}
+
+.pets .palm{
+  left: 0;
+}
+.pets .strelitzia{
+  right: 0;
+}
+
+
+
+/*starting pick and feed section*/
+.feed{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+
+}
+
+.feed > .pick_feed{
+  width: 60%;
+  height: 835px;
+  background: rgba(253, 253, 255, 0.52);
+  margin:  100px auto;
+  padding: 3% 3% 3% 5%;
+}
+
+.feed > .pick_feed > h2{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+text-align: center;
+color: #FE9013;
+margin-bottom: 20px;
+}
+.feed > .pick_feed > h5{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333B41;
+  margin-bottom: 30px;
+}
+.feed > .pick_feed > .pick_time{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  color: #333B41;
+  margin-bottom: 10px;
+}
+.feed > .pick_feed > .pick_help{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333B41;
+  padding-right: 210px;
+  margin-bottom: 70px;
+}
+.feed > .pick_feed > .pick_help > span{
+  border-bottom: 2px solid #FE9013;
+}
+.feed > .pick_feed > h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #333B41;
+  text-align: center;
+  }
+
+.feed > .pick_feed > img{
+  border: 2px solid #FE9013;
+}
+
+.feed > .pick_feed > .feed-icons-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.feed > .pick_feed > .feed-icons-section > .feed_icons{
+  width: 22%;
+  height: 22%;
+}
+
+.feed-icons-section > .feed_icons > div{
+  width: 100%;
+  height: 80%;
+  border: 2px solid #FE9013;
+  border-radius: 5px;
+  background: rgba(253, 253, 255, 0.52);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feed-icons-section > .feed_icons > .feed_icon_img_payment{
+  padding: 60px;
+}
+.feed-icons-section > .feed_icons > .feed_icon_img_zoo{
+  padding: 30px;
+}
+.feed-icons-section > .feed_icons > .feed_icon_img_monkey{
+  padding: 50px;
 }
