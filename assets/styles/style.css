@@ -13,12 +13,10 @@ header{
 }
 
 header nav{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-left: 17%;
-  padding-right: 10%;
+  padding: 20px 100px;
 }
 
 .logo1{
@@ -29,6 +27,13 @@ header nav{
   height: 52px;
   border: 1px solid #fff;
   text-align: center;
+  padding: 3px 0;
+  margin-right: 50px;
+  margin-left: 140px;
+}
+
+nav ul{
+  margin-right: 550px;
 }
 
 nav ul li{
@@ -56,6 +61,7 @@ nav ul li a{
   color: #fff;
   font-size: 20px;
   text-decoration: none;
+  width: 150px;
 }
 
 
@@ -315,6 +321,7 @@ color: #000000;
   background: rgba(253, 253, 255, 0.52);
   margin:  100px auto;
   padding: 3% 3% 3% 5%;
+  position: relative;
 }
 
 .feed > .pick_feed > h2{
@@ -363,6 +370,7 @@ margin-bottom: 20px;
   font-size: 36px;
   color: #333B41;
   text-align: center;
+  margin-bottom: 50px;
   }
 
 .feed > .pick_feed > img{
@@ -382,22 +390,316 @@ margin-bottom: 20px;
 }
 
 .feed-icons-section > .feed_icons > div{
-  width: 100%;
-  height: 80%;
+  width: 200px;
+  height: 200px;
   border: 2px solid #FE9013;
   border-radius: 5px;
   background: rgba(253, 253, 255, 0.52);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
+}
+.feed-icons-section > .feed_icons > img{
+  width: 100%;
+  height: 100%;
 }
 
-.feed-icons-section > .feed_icons > .feed_icon_img_payment{
-  padding: 60px;
+
+.feed-icons-section > .feed_icons > .feed-icon-title {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #333B41;
 }
-.feed-icons-section > .feed_icons > .feed_icon_img_zoo{
-  padding: 30px;
+
+.feed > .pick_feed > button {
+  position: absolute;
+  bottom: 50px;
+  width: 298px;
+  height: 54px;
+  background: #FE9013;
+  border-radius: 25px;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  left: calc(50% - 255px/2);
 }
-.feed-icons-section > .feed_icons > .feed_icon_img_monkey{
-  padding: 50px;
+.feed > .pick_feed > button:hover{
+  cursor: pointer;
+}
+
+
+
+
+/*Testimonials sections starting*/
+.testimonials{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding-top: 140px;
+  position: relative;
+}
+
+.testimonials > .testimonial-parent{
+  width: 80%;
+  height: 620px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.testimonials > .testimonial-parent > h2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: #333B41;
+  margin-bottom: 50px;
+}
+
+.testimonials > .testimonial-parent > .testimonials-bars {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial-parent > .testimonials-bars > .testimonials-bar{
+  width: 270px;
+  height: 350px;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.testimonials-bars > .testimonials-bar > .testimonial-header{
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.testimonials-bar > .testimonial-header > .testimonial-header-img{
+  margin-right: 10px;
+}
+
+.testimonial-header-text > .testimonial-header-text-name {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+color: #000000;
+}
+
+.testimonials-bar > .testimonial-bar-info{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+  color: #767474;
+  text-align: justify;
+}
+
+.testimonial-header-text > .testimonial-header-text-location {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+color: #BDBDBD;
+}
+
+.testimonials > .testimonial-parent > .testimonials-button{
+  width: 640px;
+  height: 8px;
+  margin-left: calc(50% - 320px);
+  margin-top: 30px;
+  border: 0.5px solid #FE9013;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.testimonial-parent > .testimonials-button > button{
+  width: 115px;
+  height: 7px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 5px;
+  background: #FE9013;
+}
+.testimonial-parent > .testimonials-button > button:hover{
+  cursor: pointer
+}
+.testimonial-parent > button {
+  width: 300px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  border: none;
+  border-radius: 5px;
+  margin-left: 150px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.testimonial-parent > button:hover{
+  cursor: pointer;
+}
+
+.testimonials > img{
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+
+/*footer section starting*/
+footer{
+  width: 100%;
+  height: 450px;
+  background-color: #000;
+  padding-top: 50px;
+}
+
+footer > div.footer-top{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.footer-top > .subscribe-submit > p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+div.footer-top > .subscribe-submit > form > input{
+  width: 228px;
+  height: 42px;
+  font-size: 16px;
+  color: #BDBDBD;
+  padding-left: 8px;
+  background-color: #000;
+  border: 1px solid #F9804B;
+  border-radius: 3px;
+}
+div.footer-top > .subscribe-submit > form > button{
+  width: 129px;
+  height: 42px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4B9200;
+  margin-left: 3px;
+}
+div.footer-top > .subscribe-submit > form > button:hover{
+  cursor: pointer;
+}
+
+footer > .footer-bottom{
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  padding-top: 30px;
+}
+
+
+footer > .footer-bottom > .footer-donate > button{
+  width: 298px;
+  height: 54px;
+  background-color: #F9804B;
+  padding: 5px 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+footer > .footer-bottom > .footer-donate > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 5px 0;
+}
+
+footer > .footer-bottom > .footer-donate > ul > li > i{
+  width: 26px;
+  height: 26px;
+  color: #fff;
+  border-radius: 50%;
+  background: rgba(196, 196, 196, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+footer > .footer-bottom > .footer-donate > ul > li > a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom > .footer-bottom-navbar{
+  padding-top: 200px;
+}
+
+.footer-bottom-navbar > ul > li{
+  list-style-type: none;
+  display: inline;
+  padding: 10px 25px;
+}
+
+.footer-bottom-navbar > ul > li > a{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-bottom-navbar > ul > li > a > span{
+  color: #F9804B;
+}
+
+.footer-bottom > .footer-designedby{
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-bottom > .footer-designedby > p, a{
+  padding: 5px 0;
+  color: gray;
+  text-decoration: none;
 }
