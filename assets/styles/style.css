@@ -40,10 +40,10 @@ nav ul li{
   list-style-type: none;
   display: inline-block;
   padding: 10px 30px;
-
 }
 
-nav ul li span{
+
+nav ul li a span{
   color: #F9804B;
 }
 
@@ -55,6 +55,12 @@ nav ul li a{
   line-height: 140%;
   color: #FFFFFF;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+nav ul li a:hover{
+  color: #F9804B;
 }
 
 .logo2{
@@ -102,13 +108,9 @@ main .watchfavorite h2{
   font-weight: 700;
   font-size: 106.496px;
   line-height: 75%;
-  /* or 80px */
-
   text-align: center;
   text-transform: uppercase;
-
   color: #FFFFFF;
-
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -126,17 +128,18 @@ main button {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 140%;
-  /* or 22px */
-
   text-align: center;
   text-transform: uppercase;
-
   color: #FFFFFF;
+  transition-property: color;
+  transition-duration: 1s;
 }
 
 main button:hover{
   cursor: pointer;
+  background: #E0D8F0;
+  color: #F9804B;
+  font-size: 1.3em;
 }
 
 
@@ -226,6 +229,10 @@ color: #333B41;
   margin-bottom: 280px;
 }
 
+.pets i {
+  font-size: 1.5em;
+}
+
 .grid{
   width:  1158px;
   height: 872px;
@@ -233,17 +240,44 @@ color: #333B41;
   grid-column-gap: 20px;
   grid-row-gap: 10px;
   justify-content: space-between;
-  grid-template-columns: repeat(3, 366px);
-  background-color: #2196F3;
-  padding: 10px;
+  grid-template-columns: repeat(3, 370px);
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid #FA6F32;
   font-size: 30px;
   text-align: center;
   height: 426px;
   border-radius: 5px;
+  background-size: cover;
+}
+
+.grid-item:hover{
+  cursor: pointer;
+  box-shadow: 7px 10px #FE9013;
+  border: 1px solid #767474;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+.grid-item > .grid-item-info{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.grid-item > .grid-item-info > h3{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.grid-item > img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid-item h3{
@@ -291,6 +325,9 @@ color: #000000;
 
 .pets button:hover{
   cursor: pointer;
+  background: #E0D8F0;
+  color: #F9804B;
+  font-size: 1.3em;
 }
 
 .pets .pets-images{
@@ -312,11 +349,13 @@ color: #000000;
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feed > .pick_feed{
-  width: 60%;
+  width: 1160px;
   height: 835px;
   background: rgba(253, 253, 255, 0.52);
   margin:  100px auto;
@@ -431,6 +470,9 @@ color: #333B41;
 }
 .feed > .pick_feed > button:hover{
   cursor: pointer;
+  background: #E0D8F0;
+  color: #F9804B;
+  font-size: 1.3em;
 }
 
 
@@ -536,7 +578,7 @@ color: #BDBDBD;
   background: #FE9013;
 }
 .testimonial-parent > .testimonials-button > button:hover{
-  cursor: pointer
+  cursor: pointer;
 }
 .testimonial-parent > button {
   width: 300px;
@@ -557,6 +599,9 @@ color: #BDBDBD;
 
 .testimonial-parent > button:hover{
   cursor: pointer;
+  background: #E0D8F0;
+  color: #F9804B;
+  font-size: 1.3em;
 }
 
 .testimonials > img{
@@ -615,6 +660,9 @@ div.footer-top > .subscribe-submit > form > button{
 }
 div.footer-top > .subscribe-submit > form > button:hover{
   cursor: pointer;
+  background: #FE9013;
+  font-size: 1.2em;
+  border: 2px solid #fff;
 }
 
 footer > .footer-bottom{
@@ -644,6 +692,11 @@ footer > .footer-bottom > .footer-donate > button{
   margin-bottom: 25px;
 }
 
+.footer-bottom > .footer-donate > button > a{
+  color: #fff;
+}
+
+
 footer > .footer-bottom > .footer-donate > ul > li {
   display: flex;
   align-items: center;
@@ -661,6 +714,12 @@ footer > .footer-bottom > .footer-donate > ul > li > i{
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+}
+
+footer > .footer-bottom > .footer-donate > ul > li > i:hover{
+  cursor: pointer;
+  background: #fff;
+  color: #000;
 }
 
 footer > .footer-bottom > .footer-donate > ul > li > a{
@@ -686,6 +745,11 @@ footer > .footer-bottom > .footer-donate > ul > li > a{
   line-height: 140%;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.footer-bottom-navbar > ul > li > a:hover{
+  cursor: pointer;
+  color: #FA6F32;
 }
 
 .footer-bottom-navbar > ul > li > a > span{
