@@ -9,6 +9,7 @@
   width: 100%;
   min-height: 100vh;
   background: url("../images/panda.png") no-repeat;
+  background-size: cover;
 }
 
 /*starting header page*/
@@ -91,7 +92,7 @@ nav h1{
 /*starting main page*/
 
 main {
- width: 100%;;
+  width: 100%;;
   min-height: 100vh;
   position: relative;
 }
@@ -157,6 +158,7 @@ main button:hover{
   background: #E0D8F0;
   color: #F9804B;
   font-size: 1.3em;
+  box-shadow: 5px 10px #767474;
 }
 
 
@@ -280,6 +282,7 @@ color: #333B41;
   border: 1px solid #767474;
   opacity: 0.6;
   border-radius: 5px;
+  box-shadow: 5px 10px #767474;
 }
 .grid-item > .grid-item-info{
   text-align: left;
@@ -349,6 +352,7 @@ color: #000000;
   background: #E0D8F0;
   color: #F9804B;
   font-size: 1.3em;
+  box-shadow: 5px 10px #767474;
 }
 
 .pets .pets-images{
@@ -494,6 +498,7 @@ color: #333B41;
   background: #E0D8F0;
   color: #F9804B;
   font-size: 1.3em;
+  box-shadow: 5px 10px #767474;
 }
 
 
@@ -624,30 +629,34 @@ color: #BDBDBD;
   background: #E0D8F0;
   color: #F9804B;
   font-size: 1.3em;
+  box-shadow: 5px 10px #767474;
 }
 
 .testimonials > img{
   position: absolute;
   right: 30px;
-  bottom: 0;
+  bottom: -240px;
 }
 
 
 /*footer section starting*/
 footer{
   width: 100%;
-  height: 450px;
+  height: 443px;
   background-color: #000;
-  padding-top: 50px;
+  padding-top: 35px;
+  margin-top: 140px;
 }
 
 footer > div.footer-top{
-  width: 70%;
+  width: 72.5%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 7px;
 }
+
 div.footer-top > .subscribe-submit > p{
   font-family: 'Roboto';
   font-style: normal;
@@ -685,14 +694,15 @@ div.footer-top > .subscribe-submit > form > button:hover{
   background: #FE9013;
   font-size: 1.2em;
   border: 2px solid #fff;
+  box-shadow: 5px 10px #767474;
 }
 
 footer > .footer-bottom{
-  width: 70%;
+  width: 72.5%;
   margin: auto;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
-  padding-top: 30px;
+  grid-template-columns: 30% 50% 20%;
+  padding-top: 38px;
 }
 
 
@@ -711,7 +721,7 @@ footer > .footer-bottom > .footer-donate > button{
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .footer-bottom > .footer-donate > button > a{
@@ -750,13 +760,14 @@ footer > .footer-bottom > .footer-donate > ul > li > a{
 }
 
 .footer-bottom > .footer-bottom-navbar{
-  padding-top: 200px;
+  padding-top: 210px;
+  padding-left: 25px;
 }
 
 .footer-bottom-navbar > ul > li{
   list-style-type: none;
   display: inline;
-  padding: 10px 25px;
+  padding: 10px 27px;
 }
 
 .footer-bottom-navbar > ul > li > a{
@@ -783,6 +794,8 @@ footer > .footer-bottom > .footer-donate > ul > li > a{
   align-self: flex-end;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 12px;
+  font-size: 16px;
 }
 .footer-bottom > .footer-designedby > p, a{
   padding: 5px 0;
