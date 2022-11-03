@@ -402,7 +402,7 @@ color: #000000;
   height: 835px;
   background: rgba(253, 253, 255, 0.52);
   margin:  100px auto;
-  padding: 3% 3% 3% 5%;
+  padding: 20px 20px 20px 100px;
   position: relative;
 }
 
@@ -468,8 +468,8 @@ margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  margin-left: 60px;
 }
 .feed > .pick_feed > .feed-icons-section > .feed_icons{
   width: 22%;
@@ -514,7 +514,7 @@ color: #333B41;
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
-  
+  left: calc(50% - 298px/2);
 }
 .feed > .pick_feed > button:hover{
   cursor: pointer;
