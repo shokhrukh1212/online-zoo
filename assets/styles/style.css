@@ -76,7 +76,9 @@ nav ul li a:hover{
 }
 
 nav h1{
-  font-size: 20px;
+  font-size: 16px;
+  width: 105px;
+  height: 22px;
 }
 
 .logo2{
@@ -242,18 +244,18 @@ color: #333B41;
 .pets-container{
   width: 100%;
   min-height: 100vh;
-  position: relative;
 }
 
 .pets{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  margin-bottom: 280px;
+  position: relative;
+  padding-bottom: 280px;
 }
 
 .pets i {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .grid{
@@ -330,11 +332,27 @@ color: #000000;
   background-color: #F9804B;
   border-radius: 50%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pets .right:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px #767474;
+  opacity: 0.6;
+  font-size: 1.1em;
+}
+
+.pets .left:hover{
+  cursor: pointer;
+  box-shadow: -3px 3px #767474;
+  opacity: 0.6;
 }
 
 .pets button{
   position: absolute;
-  bottom: -160px;
+  bottom: 120px;
   width: 298px;
   height: 54px;
   background: #FE9013;
@@ -357,7 +375,7 @@ color: #000000;
 
 .pets .pets-images{
   position: absolute;
-  bottom: -280px;
+  bottom: 0;
 }
 
 .pets .palm{
@@ -386,6 +404,11 @@ color: #000000;
   margin:  100px auto;
   padding: 3% 3% 3% 5%;
   position: relative;
+}
+
+.pick_feed > p > span > a{
+  text-decoration: none;
+  color: #333B41;
 }
 
 .feed > .pick_feed > h2{
@@ -480,7 +503,7 @@ color: #333B41;
 
 .feed > .pick_feed > button {
   position: absolute;
-  bottom: 50px;
+  bottom: 4%;
   width: 298px;
   height: 54px;
   background: #FE9013;
@@ -491,7 +514,7 @@ color: #333B41;
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
-  left: calc(50% - 255px/2);
+  
 }
 .feed > .pick_feed > button:hover{
   cursor: pointer;
