@@ -21,7 +21,7 @@
             <a href="index.html" class="logo1"> PetStory online</a>
         
             <ul class="nav_links">
-                <li class="nav-first-li"><a href="index.html"><span>About</span></a></li>
+                <li class="nav-first-li"><a href="../main/index.html"><span>About</span></a></li>
                 <li><a href="#">Map</a></li>
                 <li><a href="#">Zoos</a></li>
                 <li><a href="../donate/index.html" target="_blank">Donate</a></li>
@@ -42,17 +42,106 @@
     
 
 
-<div class="donation-section">
-    <div class="donation-section-info">
-        <h3>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
-        <p>Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
-        <h3>Donation Information</h3>
-    </div>
+<div class="donation-section-container">
+    <div class="donation-section">
 
-    <div class="donation-amount">
-        <h2>Pick and feed a friend</h2>
-        <p>We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>                                      
+            <h3 class="">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h3>
+            <p>Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
+            <h4>Donation Information</h4>
+    
+        <div class="donation-amount">
+            <h2>Pick and feed a friend</h2>
+            <p>We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+            
+            <div class="donation-amount-panda">
+                <div class="diet-panda">
+                    <span>4</span>
+                    <p>Panda diet for the day</p>
+                </div>
+
+                <div class="ex"><i class="fas fa-xmark"></i></div>
+
+                <div class="panda">
+                    <img src="../../assets/images/panda_widget1.png" alt="panda diet">
+                </div>
+            </div>
+
+
+
+            <p>Amount</p>
+            <div class="donation-progress-bar"></div>
+
+
+            <div class="donation-payment-container">
+                
+                    <form>
+                        <!-- <div>
+                            <span>Another amount</span>
+                            <input />
+                            <span><i class="fa-solid fa-dollar-sign"></i></span>
+                        </div> -->
+
+                        <input type="number" placeholder="Another amount"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="7">
+
+                        <div class="radios">
+                            <input type="radio" id="monthly" name="choosetype"> Monthly
+                            <input type="radio" id="once" name="choosetype" checked> Once
+                        </div>
+
+                        <button type="button">feed a friend now</button>
+                    </form>
+                    
+            </div>
+
+            <p class="donation-share">Share with your friends on social networks</p>
+        </div>
     </div>
 </div>
+
+
+
+
+
+<!--  Footer section starts now  -->
+
+<footer>
+	<div class="footer-top">
+		<a href="index.html" class="logo1">PetStory online</a>
+
+		<div class="subscribe-submit">
+			<p>Subscribe to our news</p>
+			<form>
+				<input type="email" placeholder="Enter your email">
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="footer-donate">
+			<button class="donate-button"><a href="../donate/index.html" target="_blank">Donate for volunteers</a></button>
+			<ul>
+				<li><i class="fa-brands fa-facebook-f"></i><a href="#">Facebook</a></li>
+				<li><i class="fa-brands fa-twitter"></i><a href="#">Twitter</a></li>
+				<li><i class="fa-brands fa-instagram"></i><a href="#">Instagram</a></li>
+				<li><i class="fa-brands fa-youtube"></i><a href="#">YouTube</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-bottom-navbar">
+			<ul>
+				<li><a href="index.html"><span>About</span></a></li>
+				<li><a href="#">Map</a></li>
+				<li><a href="#">Zoos</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-designedby">
+			<p>Designed by Shokhrukh Karimov</p>
+			<p><a href="#">&copy;RSSchool</a> &#38; <a href="#">&copy;Yem Digital 2022</a></span>
+		</div>
+	</div>
+</footer>
 </body>
 </html>
