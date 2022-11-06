@@ -69,7 +69,27 @@
 
 
             <p>Amount</p>
-            <div class="donation-progress-bar"></div>
+            <div class="progressbar">
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+            </div>
+
+            <div class="donation-amount">
+                <div class="donation-money">$5000</div>
+                <div class="donation-money">$2000</div>
+                <div class="donation-money"><span>$1000</span></div>
+                <div class="donation-money">$500</div>
+                <div class="donation-money">$250</div>
+                <div class="donation-money">$100</div>
+                <div class="donation-money">$50</div>
+                <div class="donation-money">$25</div>
+            </div>
 
 
             <div class="donation-payment-container">
@@ -84,8 +104,8 @@
                         <input type="number" placeholder="Another amount"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="7">
 
                         <div class="radios">
-                            <input type="radio" id="monthly" name="choosetype"> Monthly
-                            <input type="radio" id="once" name="choosetype" checked> Once
+                            <div><input type="radio" id="monthly" name="choosetype"> Monthly</div>
+                            <div><input type="radio" id="once" name="choosetype" checked> Once</div>
                         </div>
 
                         <button type="button">feed a friend now</button>
