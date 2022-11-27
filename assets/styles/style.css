@@ -7,9 +7,10 @@
 
 .container{
   width: 100%;
-  min-height: 100vh;
+  height: 780px;
   background: url("../images/panda.png") no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 /*starting header page*/
@@ -21,13 +22,24 @@ header{
 
 header nav{
   height: 80px;
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 8% 80% 12%;
-  padding: 0 220px;
+  justify-content: space-around;
 }
 
-.logo1{
+header nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 29px;
+}
+
+nav ul li.logo1{
   color: #fff;
   font-size: 19px;
   line-height: 22px;
@@ -37,17 +49,6 @@ header nav{
   border: 1px solid #fff;
   text-align: center;
   padding: 3px 0;
-}
-
-nav ul{
-  margin-right: 550px;
-  width: 100%;
-}
-
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  padding: 29px;
 }
 
 nav ul li.nav-first-li{
@@ -94,17 +95,15 @@ nav h1{
 /*starting main page*/
 
 main {
-  width: 100%;;
-  min-height: 100vh;
-  position: relative;
+  width: 100%;
 }
 
 main img{
   position: absolute;
   width: 465px;
   height: 465px;
-  left: 807px;
-  top: 12px;
+  right: 328px;
+  top: 92px;
   border-radius: 50%;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
@@ -112,8 +111,8 @@ main .watchfavorite{
   position: absolute;
   width: 500.31px;
   height: 400px;
-  left: 880px;
-  top: 86px;
+  right: 220px;
+  top: 166px;
 
 }
 
@@ -137,8 +136,8 @@ main button {
   position: absolute;
   width: 298px;
   height: 54px;
-  left: 983px;
-  top: 546px;
+  right: 319px;
+  top: 626px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border: none;
   border-radius: 25px;
@@ -171,7 +170,6 @@ main button:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  column-gap: 70px;
 	width: 1161px;
 	height: 403px;
   margin: auto;
@@ -181,14 +179,11 @@ main button:hover{
 }
 
 .backstage > .image{
-	flex: 1;
   width: 609px;
   height: 403px;
 }
 .backstage > .text{
-	flex: 1;
-  width: 609px;
-  height: 403px;
+  padding-left: 31px;
 }
 
 .backstage > .text > h2{
@@ -259,7 +254,6 @@ color: #333B41;
 }
 
 .grid{
-  width:  1158px;
   height: 872px;
   display: grid;
   grid-column-gap: 30px;
@@ -825,3 +819,4 @@ footer > .footer-bottom > .footer-donate > ul > li > a{
   color: gray;
   text-decoration: none;
 }
+

@@ -1,0 +1,49 @@
+@media screen and (max-width:1000px) {
+
+    .container{
+        height: 584px;
+    }
+
+    main .watchfavorite{
+        right: 85px;
+        top: 122px;
+      }
+
+    main .watchfavorite h2{
+        font-size: 85px;
+    }
+
+    main img{
+        top: 69px;
+        width: 367px;
+        height: 367px;
+        right: 177px;
+    }
+
+    main button {
+        right: 137px;
+        top: 483px;
+    }
+
+    .backstage{
+    width: 940px;
+    height: 427px;
+    }
+    .backstage .image{
+        width: 455px;
+        height: 408px;
+    }
+    .backstage .image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .backstage .text{
+        width: calc(100% - 455px);
+    }
+
+    .backstage .flowerfoto{
+        display: none;
+    }
+
+}
