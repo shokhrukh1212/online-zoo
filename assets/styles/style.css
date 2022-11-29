@@ -10,7 +10,7 @@
   height: 780px;
   background: url("../images/panda.png") no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; 
 }
 
 /*starting header page*/
@@ -89,6 +89,14 @@ nav h1{
   height: 22px;
 }
 
+nav i{
+  font-size: 3em;
+  color: #fff;
+  display: none !important;
+}
+nav i:hover{
+  cursor: pointer;
+}
 
 
 
