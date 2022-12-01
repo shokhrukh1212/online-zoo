@@ -159,6 +159,27 @@
         top: 30px;
       }
 
+
+
+
+
+
+
+      .testimonials > .testimonial-parent{
+        width: 940px;
+        height: 468px;
+      }
+      .testimonials > .testimonial-parent > .testimonials-bars {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .testimonial-parent > .testimonials-bars > .testimonials-bar{
+        width: 293px;
+        height: 391px;
+        flex: 1;
+        margin: 30px;
+      }
+
 }
 
 
