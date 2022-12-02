@@ -546,6 +546,8 @@ color: #333B41;
   background-color: #fff;
   padding-top: 140px;
   position: relative;
+  padding: 0;
+  padding-bottom: 144px;
 }
 
 .testimonials > .testimonial-parent{
@@ -553,6 +555,7 @@ color: #333B41;
   height: 575px;
   margin: auto;
   background-color: #fff;
+  margin-top: 140px;
 }
 
 .testimonials > .testimonial-parent > h2{
@@ -623,7 +626,8 @@ color: #BDBDBD;
 .testimonials > .testimonial-parent > .testimonials-button{
   width: 600px;
   height: 8px;
-  margin-left: calc(50% - 300px);
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 21px;
   border: 0.5px solid #FE9013;
   border-radius: 5px;
@@ -670,8 +674,8 @@ color: #BDBDBD;
 
 .testimonials > img{
   position: absolute;
-  right: 30px;
-  bottom: -240px;
+  right: 0;
+  bottom: -80px;
 }
 
 
@@ -681,7 +685,7 @@ footer{
   height: 443px;
   background-color: #000;
   padding-top: 35px;
-  margin-top: 140px;
+  display: block;
 }
 
 footer > div.footer-top{
@@ -691,6 +695,17 @@ footer > div.footer-top{
   align-items: center;
   justify-content: space-between;
   margin-top: 7px;
+}
+.footer-top > a{
+  color: #fff;
+  font-size: 19px;
+  line-height: 22px;
+  text-decoration: none;
+  width: 82px;
+  height: 52px;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 3px 0;
 }
 
 div.footer-top > .subscribe-submit > p{
@@ -737,7 +752,7 @@ footer > .footer-bottom{
   width: 72.5%;
   margin: auto;
   display: grid;
-  grid-template-columns: 30% 50% 20%;
+  grid-template-columns: 30% 45% 25%;
   padding-top: 38px;
 }
 
@@ -803,7 +818,7 @@ footer > .footer-bottom > .footer-donate > ul > li > a{
 .footer-bottom-navbar > ul > li{
   list-style-type: none;
   display: inline;
-  padding: 10px 27px;
+  padding: 10px 29px;
 }
 
 .footer-bottom-navbar > ul > li > a{
@@ -830,12 +845,11 @@ footer > .footer-bottom > .footer-donate > ul > li > a{
   align-self: flex-end;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 12px;
-  font-size: 16px;
 }
 .footer-bottom > .footer-designedby > p, a{
   padding: 5px 0;
   color: gray;
   text-decoration: none;
+  font-size: 16px;
 }
 
