@@ -1,30 +1,5 @@
-/* @media screen and (max-width: 1400px) {
-  .grid{
-      height: 800px;
-      grid-template-columns: repeat(3, 320px);
-      grid-row-gap: 0;
-      margin: 0 10px;
-    }
 
-    .grid-item {
-      height: 380px;
-    }
-
-    .grid-item img {
-      width: 100%; 
-    }
-
-    .pets .palm{
-      height: 250px;
-    }
-    .pets .strelitzia{
-      width: 260px;
-      height: 240px;
-    }
-} */
-
-
-@media screen and (min-width:1001px) and (max-width: 1599px) {
+@media screen and (min-width:1000px) and (max-width: 1599px) {
   *{
     margin: 0;
     padding: 0;
@@ -192,12 +167,6 @@
 
 
 
-
-
-
-      footer{
-
-      }
       footer > div.footer-top{
         width: 90%
       }
@@ -227,14 +196,4 @@
         width: 228px;
       }
 
-}
-
-
-@media screen and (max-width: 320px) {
-  nav ul, .logo2{
-    display: none;
-  }
-  nav i{
-    display: block;
-  }
 }
