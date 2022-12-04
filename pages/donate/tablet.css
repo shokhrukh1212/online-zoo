@@ -49,6 +49,11 @@
   header nav h1 {
     display: none;
   }
+  .donation-section-container{
+    width: 100%;
+    height: 1333px;
+    margin: 0;
+  }
   .donation-section {
     width: 600px;
     margin: auto;
@@ -106,10 +111,12 @@
     height: 282px;
     position: relative;
     padding: 0;
+    margin: 0;
   }
   footer > div.footer-top {
     width: 100%;
     padding: 13px 20px;
+    margin: 0;
   }
   div.footer-top > .subscribe-submit {
     display: none;

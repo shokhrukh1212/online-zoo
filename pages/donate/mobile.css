@@ -1,14 +1,309 @@
 @media screen and (min-width: 320px) and (max-width: 639px) {
-    html, body{
+
+    html,
+    body {
         width: 320px;
         margin: auto;
     }
-    header{
+
+    .container {
+        width: 100%;
+        height: 221px;
+    }
+
+    header {
         height: 34px;
     }
-    header > .donate-panda {
+
+    header>.donate-panda {
         width: 100%;
         height: 187px;
         background: url("../../assets/images/panda_bg_320.png") no-repeat;
-      }
+    }
+
+    header nav {
+        height: 100%;
+        width: 94%;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    nav ul li.logo1 {
+        width: 46.86px;
+        height: 29.03px;
+        border: none;
+        padding: 0;
+        line-height: 0;
+    }
+
+    nav ul li.logo1 a {
+        font-size: 12.2899px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+    header nav ul li.forNone {
+        display: none;
+    }
+
+    header nav i {
+        display: block !important;
+        font-size: 1.3em;
+        color: #fff;
+    }
+
+    header nav i:hover {
+        cursor: pointer;
+    }
+
+    header nav h1 {
+        display: none;
+    }
+
+
+
+
+    .donation-section-container {
+        width: 100%;
+        height: 1145px;
+        margin-bottom: 0;
+    }
+
+    .donation-section {
+        width: 300px;
+        margin: auto;
+        padding-bottom: 20px;
+        margin-bottom: 0;
+    }
+
+    .donation-section>p {
+        margin-bottom: 30px;
+    }
+
+    .donation-section>h3 {
+        text-align: left;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .donation-section>h4 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .donation-section>.donation-amount {
+        width: 100%;
+        height: 591px;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .donation-section>.donation-amount>h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .donation-section>.donation-amount>.weKnow {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 36.78px;
+    }
+
+    .donation-amount>.donation-amount-panda {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .donation-amount>p {
+        margin-bottom: 8.5px;
+    }
+
+    .donation-amount-panda>.diet-panda {
+        width: 90px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .donation-amount-panda>.diet-panda>span {
+        font-size: 40.6015px;
+    }
+
+    .donation-amount-panda>.diet-panda>p {
+        font-size: 9.02255px;
+    }
+
+    .donation-amount-panda>.ex {
+        width: 7.89px;
+        height: 7.89px;
+        margin: 0;
+    }
+
+    .donation-amount-panda>.panda>img {
+        content: url(../../assets/images/panda_widget1_320.png);
+    }
+
+    .donation-amount>.donation-amount-panda {
+        width: 100%;
+    }
+
+    .donation-amount>.progressbar {
+        width: 100%;
+    }
+
+    .donation-amount>.progressbar .forNone1000,
+    .forNone640 {
+        display: none;
+    }
+
+    .donation-amount>.donation-amount-money .forNone1000,
+    .forNone640 {
+        display: none;
+    }
+
+    .donation-amount>.donation-amount-money {
+        margin-bottom: 18px;
+    }
+
+    .donation-amount>.donation-amount-money>.donation-money {
+        width: 70px;
+        font-size: 13px;
+    }
+
+    .donation-payment-container>form>input[type="number"] {
+        width: 180px;
+        height: 42px;
+        align-self: flex-start;
+        border: 1px solid #929699;
+    }
+
+    .donation-payment-container>form>button {
+        margin-bottom: 0;
+    }
+
+    .donation-amount>p.donation-share {
+        text-align: left;
+        width: 301px;
+        height: 22px;
+        padding-bottom: 20px;
+    }
+
+
+
+    footer {
+        padding-top: 0;
+        width: 100%;
+        height: 540px;
+        position: relative;
+    }
+
+    footer>div.footer-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0;
+
+    }
+
+    .footer-top>a.logo1 {
+        border: none;
+        width: 128px;
+        margin-bottom: 70px;
+        margin-top: 20px;
+    }
+
+    div.footer-top>.subscribe-submit {
+        text-align: center;
+    }
+
+    div.footer-top>.subscribe-submit>p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    div.footer-top>.subscribe-submit>form>input {
+        margin-bottom: 10px;
+    }
+
+    div.footer-top>.subscribe-submit>form>input:focus {
+        border: none;
+        border: 0.7px solid #4B9200;
+    }
+
+    div.footer-top>.subscribe-submit>form>input:focus+.emailSubmit {
+        color: #4B9200;
+        outline: none;
+    }
+
+    footer>.footer-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer>.footer-bottom>.footer-donate {
+        text-align: center;
+    }
+
+    footer>.footer-bottom>.footer-donate>ul.donate-footer {
+        position: absolute;
+        top: 60px;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    footer>.footer-bottom>.footer-donate>ul>li {
+        width: 26px;
+        height: 26px;
+        display: inline-block;
+        margin: 15px;
+        padding: 0;
+    }
+
+    footer>.footer-bottom>.footer-donate>ul>li>a {
+        display: none;
+    }
+
+    .footer-bottom>.footer-bottom-navbar {
+        padding: 0;
+        order: 1;
+    }
+
+    .footer-bottom>.footer-bottom-navbar>ul {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .footer-bottom-navbar>ul>li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0 13px;
+    }
+
+    .footer-bottom-navbar>ul>li>a {
+        font-weight: 400;
+    }
+
+    .footer-bottom-navbar>ul>li.footer-padding-left {
+        padding-left: 21px;
+    }
+
+    .footer-bottom-navbar>ul>li.footer-padding-right {
+        padding-right: 21px;
+    }
+
+    .footer-bottom>.footer-designedby {
+        padding: 0;
+        padding-right: 10px;
+        margin-bottom: 40px;
+        font-size: 15px;
+    }
 }
