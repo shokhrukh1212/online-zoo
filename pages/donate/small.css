@@ -1,0 +1,105 @@
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+  html,
+  body {
+    width: 1000px;
+    margin: auto;
+  }
+  .container {
+    width: 1000px;
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 35px;
+  }
+  nav ul li a span {
+    color: #fff;
+  }
+  header > .donate-panda {
+    background: url("../../assets/images/panda_bg_1000.png");
+  }
+
+  .donation-section {
+    width: 940px;
+    margin: auto;
+  }
+  .donation-section > h3 {
+    width: 778px;
+    height: 94px;
+  }
+  .donation-section > h4 {
+    margin-bottom: 40px;
+  }
+
+  .donation-section > .donation-amount {
+    width: 100%;
+    height: 918px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 44px 46px 47px;
+  }
+  .donation-section > .donation-amount > h2 {
+    margin-bottom: 10px;
+  }
+  .donation-section > .donation-amount > .weKnow {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .donation-section > .donation-amount > #amount {
+    width: 100%;
+    text-align: left;
+  }
+
+  .donation-amount > .progressbar {
+    width: 810px;
+    height: 27px;
+  }
+  .donation-amount > .donation-amount-money {
+    width: 820px;
+  }
+  .donation-amount > .progressbar .forNone1000,
+  .donation-amount-money .forNone1000 {
+    display: none;
+  }
+
+  .donation-payment-container > form > div.radios {
+    margin-bottom: 39px;
+  }
+
+  footer > div.footer-top {
+    width: 93%;
+  }
+  footer > div.footer-bottom {
+    width: 93%;
+    grid-template-columns: 30% 45% 25%;
+  }
+  .footer-top > a {
+    color: #fff;
+    font-size: 19px;
+    line-height: 22px;
+    text-decoration: none;
+    width: 82px;
+    height: 52px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 3px 0;
+  }
+  div.footer-top > .subscribe-submit{
+    padding-right: 32px;
+  }
+  .footer-bottom > .footer-bottom-navbar {
+    padding-left: 0;
+  }
+  .footer-bottom-navbar > ul > li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px 24px;
+  }
+  .footer-bottom > .footer-designedby {
+    width: 228px;
+  }
+}

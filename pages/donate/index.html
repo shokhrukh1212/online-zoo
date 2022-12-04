@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="small.css">
+    <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -21,14 +22,13 @@
         <nav>
             <ul class="nav_links">
                 <li class="logo1"><a href="index.html"> PetStory online</a></li>
-                <li class="nav-first-li"><a href="../main/index.html"><span>About</span></a></li>
-                <li><a href="#">Map</a></li>
-                <li><a href="#">Zoos</a></li>
-                <li><a href="../donate/index.html" target="_blank">Donate</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li class="nav-first-li forNone"><a href="../main/index.html"><span>About</span></a></li>
+                <li class="forNone"><a href="#">Map</a></li>
+                <li class="forNone"><a href="#">Zoos</a></li>
+                <li class="forNone"><a href="#">Contact us</a></li>
+                <li class="forNone"><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="logo2" target="_blank">Designed by &#169;</a></li>
             </ul>
-        
-            <h1><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="logo2" target="_blank">Designed by &#169;</a></h1>
+            <i class="fa-solid fa-bars"></i>
         </nav>
     
     
@@ -51,7 +51,7 @@
     
         <div class="donation-amount">
             <h2>Pick and feed a friend</h2>
-            <p>We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
+            <p class="weKnow">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
             
             <div class="donation-amount-panda">
                 <div class="diet-panda">
@@ -68,11 +68,11 @@
 
 
 
-            <p>Amount</p>
+            <p id="amount">Amount</p>
             <div class="progressbar">
-                <div class="progress-step"></div>
-                <div class="progress-step"></div>
-                <div class="progress-step"></div>
+                <div class="progress-step forNone1000"></div>
+                <div class="progress-step forNone640"></div>
+                <div class="progress-step forNone640"></div>
                 <div class="progress-step"></div>
                 <div class="progress-step"></div>
                 <div class="progress-step"></div>
@@ -80,10 +80,10 @@
                 <div class="progress-step"></div>
             </div>
 
-            <div class="donation-amount">
-                <div class="donation-money">$5000</div>
-                <div class="donation-money">$2000</div>
-                <div class="donation-money"><span>$1000</span></div>
+            <div class="donation-amount-money">
+                <div class="donation-money forNone1000">$5000</div>
+                <div class="donation-money forNone640">$2000</div>
+                <div class="donation-money forNone640"><span>$1000</span></div>
                 <div class="donation-money">$500</div>
                 <div class="donation-money">$250</div>
                 <div class="donation-money">$100</div>
@@ -95,11 +95,6 @@
             <div class="donation-payment-container">
                 
                     <form>
-                        <!-- <div>
-                            <span>Another amount</span>
-                            <input />
-                            <span><i class="fa-solid fa-dollar-sign"></i></span>
-                        </div> -->
 
                         <input type="number" placeholder="Another amount"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="7">
 
@@ -140,7 +135,7 @@
 	<div class="footer-bottom">
 		<div class="footer-donate">
 			<button class="donate-button"><a href="../donate/index.html" target="_blank">Donate for volunteers</a></button>
-			<ul>
+			<ul class="donate-footer">
 				<li><i class="fa-brands fa-facebook-f"></i><a href="#">Facebook</a></li>
 				<li><i class="fa-brands fa-twitter"></i><a href="#">Twitter</a></li>
 				<li><i class="fa-brands fa-instagram"></i><a href="#">Instagram</a></li>
@@ -158,7 +153,7 @@
 		</div>
 
 		<div class="footer-designedby">
-			<p>Designed by Shokhrukh Karimov</p>
+			<p>Designed by Alisa Samborskaya</p>
 			<p><a href="#">&copy;RSSchool</a> &#38; <a href="#">&copy;Yem Digital 2022</a></span>
 		</div>
 	</div>

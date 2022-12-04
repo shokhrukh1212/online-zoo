@@ -5,5 +5,62 @@
     }
     .container{
         width: 320px;
+        background: url("../images/Giant\ Panda_320.png") no-repeat;
     }
+    header{
+        height: 34px;
+    }
+    header nav{
+        height: 100%;
+        width: 95%;
+        margin: auto;
+        justify-content: space-between;
+      }
+      nav ul li.logo1{
+        width: 46.86px;
+        height: 29.03px;
+        border: none;
+        padding: 0;
+        line-height: 0;
+      }
+      nav ul li.logo1 a{
+        font-size: 12.2899px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+      header nav ul li.forNone{
+        display: none;
+      }
+      header nav i{
+          display: block;
+          font-size: 1.3em;
+      }
+      header nav h1{
+        display: none;
+      }
+      header nav i{
+        display: block !important;
+      }
+      main{
+        position: relative;
+      }
+      main .watchfavorite{
+        width: 128.13px;
+        height: 102.44px;
+        top: 41.12px;
+        right: 14.77px;
+      }
+        main .watchfavorite h2{
+          font-size: 28px;
+          text-align: center;
+        }
+        main img{
+            width: 119.09px;
+            height: 119.09px;
+            right: 70.11px;
+            top: 22.17px;
+        }
+        main button {
+          display: none;
+        }
 }
