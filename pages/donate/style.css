@@ -30,7 +30,7 @@ header nav {
   align-items: center;
   justify-content: space-around;
 }
-header nav i{
+header nav img{
   display: none !important;
 }
 
