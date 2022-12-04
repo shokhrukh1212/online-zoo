@@ -47,7 +47,6 @@ nav ul li{
 nav ul li.logo1{
   color: #fff;
   font-size: 19px;
-  line-height: 22px;
   text-decoration: none;
   width: 82px;
   height: 52px;
@@ -95,8 +94,8 @@ nav h1{
 }
 
 nav i{
-  font-size: 3em;
   color: #fff;
+  /* visibility: hidden; */
   display: none !important;
 }
 nav i:hover{

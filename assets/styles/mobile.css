@@ -1,0 +1,9 @@
+@media screen and (min-width:320x) and (max-width: 639px) {
+    html, body{
+        width: 320px;
+        margin: auto;
+    }
+    .container{
+        width: 320px;
+    }
+}

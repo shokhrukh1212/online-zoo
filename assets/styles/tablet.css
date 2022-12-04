@@ -7,18 +7,41 @@
     .container{
         width: 640px;
         height: 373px;
+        background: url("../images/Giant\ Panda.png") no-repeat;
     }
     header{
         height: 34px;
     }
     header nav{
-        display: none;;
+      height: 100%;
+      width: 95%;
+      margin: auto;
+      justify-content: space-between;
     }
-    header nav ul:first-child{
-        display: block;
+    nav ul li.logo1{
+      width: 46.86px;
+      height: 29.03px;
+      border: none;
+      padding: 0;
+      line-height: 0;
+    }
+    nav ul li.logo1 a{
+      font-size: 12.2899px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+    header nav ul li.forNone{
+      display: none;
     }
     header nav i{
         display: block;
+        font-size: 1.3em;
+    }
+    header nav h1{
+      display: none;
+    }
+    header nav i{
+      display: block !important;
     }
 
 
@@ -226,8 +249,76 @@
         margin-top: 40px;
       }
       .testimonials > img{
-        bottom: -50px;
+        bottom: -70px;
         height: 180px;
+      }
+
+
+
+
+
+      footer{
+        width: 100%;
+        height: 282px;
+        position: relative;
+        padding: 0;
+      }
+      footer > div.footer-top{
+        width: 100%;
+        padding: 13px 20px;
+      }
+      div.footer-top > .subscribe-submit{
+        display: none;
+      }
+
+      footer > .footer-bottom{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        padding-top: 12px;
+        padding-left: 20px;
+        display: flex;
+      }
+      footer > .footer-bottom > .footer-donate > ul.donate-footer{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 8px;
+        margin-right: 5px;
+      }
+      footer > .footer-bottom > .footer-donate > ul.donate-footer a{
+        display: none;
+      }
+      footer > .footer-bottom > .footer-donate > ul.donate-footer > li > i{
+        margin-bottom: 10px;
+      }
+      .footer-bottom > .footer-bottom-navbar{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 12px;
+      }
+      .footer-bottom-navbar > ul{
+        padding: 0;
+      }
+      .footer-bottom-navbar > ul > li{
+        padding: 0;
+        margin-right: 37px;
+      }
+      .footer-bottom-navbar > ul > li > a{
+        text-align: left;
+      }
+      .footer-bottom-navbar > ul > li > a > span{
+        color: #fff;
+      }
+
+      .footer-bottom > .footer-designedby{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 12px;
+        margin-right: 20px;
+        padding-left: 0;
       }
       
 }
