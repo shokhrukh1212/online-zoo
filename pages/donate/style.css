@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 470px; 
+  height: 470px;
 }
 
 /*starting header page*/
@@ -30,7 +30,7 @@ header nav {
   align-items: center;
   justify-content: space-around;
 }
-header nav img{
+header nav img {
   display: none !important;
 }
 
@@ -450,10 +450,10 @@ div.footer-top > .subscribe-submit > form > input {
 }
 div.footer-top > .subscribe-submit > form > input:focus {
   border: none;
-  border: 0.7px solid #4B9200;
+  border: 0.7px solid #4b9200;
 }
-div.footer-top > .subscribe-submit > form > input:focus +  .emailSubmit{
-  color: #4B9200;
+div.footer-top > .subscribe-submit > form > input:focus + .emailSubmit {
+  color: #4b9200;
   outline: none;
 }
 div.footer-top > .subscribe-submit > form > button {

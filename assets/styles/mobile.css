@@ -1,21 +1,22 @@
-@media screen and (min-width:320px) and (max-width: 639px) {
-
-  *{
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  html, body {
+  html,
+  body {
     width: 320px;
     min-height: 100vh;
-    overflow: auto;
+    height: 4477px;
     margin: auto;
   }
 
   .container {
     width: 320px;
     height: 221px;
-    background: url("../images/Giant\ Panda_320.png") no-repeat;
+    margin-bottom: 104px;
+    position: relative;
   }
 
   header {
@@ -61,14 +62,16 @@
   }
 
   main {
+    width: 100%;
+    height: 187px;
+    background: url("../images/Giant\ Panda_320.png") no-repeat;
     position: relative;
   }
-
   main .watchfavorite {
     width: 128.13px;
     height: 102.44px;
+    right: 10px;
     top: 41.12px;
-    right: 14.77px;
   }
 
   main .watchfavorite h2 {
@@ -79,23 +82,21 @@
   main img {
     width: 119.09px;
     height: 119.09px;
-    right: 70.11px;
     top: 22.17px;
+    right: 38px;
   }
 
   main button {
-  width: 298px;
-  height: 54px;
-  margin: auto;
-  top: 626px;
+    width: 298px;
+    height: 54px;
+    margin: auto;
+    top: 205px;
+    left: 11px;
+    margin: auto;
   }
 
-
-
-  .backstage{
+  .backstage {
     width: 320px;
-    min-height: 100vh;
-    padding-top: 104px;
     margin: 0;
   }
   .backstage div.image {
@@ -103,8 +104,7 @@
   }
   .backstage div.text {
     width: 100%;
-    height: 100%;
-    padding-left: 0;
+    height: auto;
   }
   .backstage > .text > h2 {
     font-size: 24px;
@@ -116,55 +116,300 @@
   .backstage > .text > #howwork {
     margin-bottom: 10px;
   }
+  .backstage > .text > #maingoal {
+    margin-bottom: 40px;
+  }
+  .backstage > .flowerfoto {
+    content: url(../images/flower_foto1_320.png);
+    top: 259px;
+  }
 
-
-  .pets-container{
+  .pets {
+    padding: 0;
+    padding-bottom: 134px;
+  }
+  .pets button {
+    bottom: 60px;
+  }
+  .pets-container {
     width: 100%;
+    min-height: 100vh;
     margin: 0;
   }
   .grid {
     width: 100%;
-    min-height: 100vh;
+    height: 1388px;
     display: grid;
     grid-row-gap: 20px;
     justify-content: space-between;
     grid-template-columns: 285.24px;
-    grid-template-rows: repeat(4, 350px);
+    grid-template-rows: repeat(4, 332px);
     margin: 0 20px;
+    overflow: hidden;
+  }
+  .grid > .grid-item {
+    width: 285.24px;
+    height: 332px;
+    margin-bottom: 20px;
+    border: 1px solid #fa6f32;
+  }
+  .grid-item h3 {
+    margin: 0;
+    height: 17px;
+  }
+  .grid-item #wherefrom {
+    height: 14px;
   }
   .grid-item > img {
     width: 100%;
-    height: 100%;
+    height: 285.24px;
+    background-size: cover;
   }
-  .pets div.pets_button{
+  .pets div.pets_button {
     display: none;
   }
-  .pets img.pets-images{
-    display: none;
+  .pets img.palm {
+    content: url(../images/palm_foto_320.png);
+    bottom: 0;
+  }
+  .pets img.strelitzia {
+    content: url(../images/strelitzia_320.png);
+    bottom: 0;
   }
 
-
-  .feed{
+  .feed {
     margin: 0;
+    width: 320px;
+    height: 1082px;
+    padding: 20px 34px 40px;
+    align-items: flex-start;
+  }
+  .feed > .pick_feed {
+    width: 300px;
+    height: 1042px;
+    border-radius: 10px;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+  .feed > .pick_feed > h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .feed > .pick_feed > h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .feed > .pick_feed > img.arrow {
+    display: block !important;
+    content: url(../images/arrow_toptobottom.png);
+    position: absolute;
+    border: none;
+  }
+  .feed > .pick_feed > img.arrow1 {
+    top: 353px;
+    left: 240px;
+  }
+  .feed > .pick_feed > img.arrow2 {
+    top: 598px;
+    left: 240px;
+  }
+  .feed > .pick_feed > p.pick_time,
+  p.pick_help {
     display: none;
+  }
+  .feed > .pick_feed > h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
   .feed > .pick_feed > .feed-icons-section {
     flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .feed-icons-section > .feed_icons > div {
+    margin-bottom: 10px;
+  }
+  .feed-icons-section > img.vector {
+    display: none;
+  }
+  .feed > .pick_feed > button {
+    margin-top: 0;
+    margin: auto;
   }
 
-
-
-  .testimonials{
-    width: 320px;
+  .testimonials {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    height: auto;
+  }
+  .testimonials > .testimonial-parent {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .testimonials > .testimonial-parent > h2 {
+    margin-bottom: 20px;
+  }
+  .testimonials > .testimonial-parent > .testimonials-bars {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .testimonial-parent > .testimonials-bars > .testimonials-bar {
+    width: 300px;
+    height: 109px;
     overflow: hidden;
+    margin-bottom: 15px;
+  }
+  .testimonials-bars > .testimonials-bar > .testimonial-header {
+    margin-bottom: 10px;
+  }
+  .testimonials-bar > .testimonial-bar-info {
+    line-height: 120%;
+  }
+
+  .testimonial-parent > .testimonials-bars > .last {
+    display: none;
+  }
+  .testimonials > .testimonial-parent > .testimonials-button {
+    display: none;
+  }
+  .testimonial-parent > button {
+    width: 240px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .testimonials > img {
+    bottom: -70px;
+    height: 180px;
+  }
+  .testimonials > img.leavfoto {
+    height: 75.81px;
+    bottom: -25px;
+  }
+
+  footer {
+    padding-top: 0;
+    width: 100%;
+    height: 540px;
+    position: relative;
+  }
+
+  footer > div.footer-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .footer-top > a.logo1 {
+    border: none;
+    width: 128px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+  }
+
+  div.footer-top > .subscribe-submit {
+    text-align: center;
+  }
+
+  div.footer-top > .subscribe-submit > p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  div.footer-top > .subscribe-submit > form > input {
+    margin-bottom: 10px;
+  }
+  div.footer-top > .subscribe-submit > form > button {
+    color: #000;
+  }
+
+  div.footer-top > .subscribe-submit > form > input:focus {
+    border: none;
+    border: 0.7px solid #4b9200;
+  }
+
+  div.footer-top > .subscribe-submit > form > input:focus + button {
+    color: #4b9200;
+    outline: none;
+  }
+
+  footer > .footer-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer > .footer-bottom > .footer-donate {
+    text-align: center;
+  }
+
+  footer > .footer-bottom > .footer-donate > ul.donate-footer {
+    position: absolute;
+    top: 60px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  footer > .footer-bottom > .footer-donate > ul > li {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin: 15px;
+    padding: 0;
+  }
+
+  footer > .footer-bottom > .footer-donate > ul > li > a {
     display: none;
   }
 
-
-  footer{
-    width: 320px;
-    display: none;
+  .footer-bottom > .footer-bottom-navbar {
+    padding: 0;
+    order: 1;
   }
 
+  .footer-bottom > .footer-bottom-navbar > ul {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+  }
 
+  .footer-bottom-navbar > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 13px;
+  }
+
+  .footer-bottom-navbar > ul > li > a {
+    font-weight: 400;
+  }
+  .footer-bottom-navbar > ul > li > a > span {
+    color: #fff;
+  }
+
+  .footer-bottom-navbar > ul > li.footer-padding-left {
+    padding-left: 21px;
+  }
+
+  .footer-bottom-navbar > ul > li.footer-padding-right {
+    padding-right: 21px;
+  }
+
+  .footer-bottom > .footer-designedby {
+    padding: 0;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
 }

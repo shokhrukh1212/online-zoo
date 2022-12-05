@@ -548,7 +548,7 @@ main button:hover {
 /*Testimonials sections starting*/
 .testimonials {
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   background-color: #fff;
   padding-top: 140px;
   position: relative;
