@@ -51,6 +51,7 @@
   header nav i {
     display: block;
     font-size: 1.3em;
+    z-index: 1;
   }
 
   header nav h1 {
@@ -94,6 +95,46 @@
     left: 11px;
     margin: auto;
   }
+
+
+    /*menu section*/
+    .container > .menu{
+      width: 70%;
+      height: 180px;
+      position: absolute;
+      top: -100%;
+      right: 0;
+      border: 1px solid red;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: cadetblue;
+      transition: all .5s;
+    }
+    .container > .showmenu{
+      top: 0;
+    }
+    .container > .menu > ul{
+      width: 100%;
+    }
+    .container > .menu > ul > li{
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 5px 0;
+    }
+    .container > .menu > ul > li > a{
+      font-size: 1.3rem;
+      color: #fff;
+    }
+    .container > .menu > ul > li > a span{
+      color: #fa6f32;
+    }
+    .container > .menu > ul > li > a:hover{
+      cursor: pointer;
+      color: #fa6f32;
+    }
 
   .backstage {
     width: 320px;

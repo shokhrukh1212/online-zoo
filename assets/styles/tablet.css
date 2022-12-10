@@ -9,6 +9,7 @@
     width: 640px;
     height: 373px;
     background: url("../images/Giant\ Panda.png") no-repeat;
+    position: relative;
   }
   header {
     height: 34px;
@@ -43,6 +44,7 @@
   }
   header nav i {
     display: block !important;
+    z-index: 1;
   }
   header nav i:hover {
     cursor: pointer;
@@ -72,6 +74,50 @@
     left: 20.21px;
     top: 279px;
   }
+
+
+
+  /*menu section*/
+  .container > .menu{
+    width: 80%;
+    height: 285px;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    border: 1px solid red;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    transition: all ease .5s;
+  }
+  .container > .showmenu{
+    top: 0;
+  }
+  .container > .menu > ul{
+    width: 100%;
+  }
+  .container > .menu > ul > li{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container > .menu > ul > li > a{
+    font-size: 2rem;
+    color: #fff;
+  }
+  .container > .menu > ul > li > a span{
+    color: #fa6f32;
+  }
+  .container > .menu > ul > li > a:hover{
+    cursor: pointer;
+    color: #fa6f32;
+  }
+
+
+
 
   .backstage {
     width: 495px;

@@ -5,7 +5,7 @@
     margin: auto;
   }
 
-  .container {
+  .container { 
     width: 640px;
     height: 369px;
   }
@@ -48,6 +48,47 @@
   }
   header nav h1 {
     display: none;
+  }
+
+
+  
+  /*menu section*/
+  .container > .menu{
+    width: 80%;
+    height: 285px;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    border: 1px solid red;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    transition: all .5s;
+  }
+  .container > .showmenu{
+    top: 0;
+  }
+  .container > .menu > ul{
+    width: 100%;
+  }
+  .container > .menu > ul > li{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container > .menu > ul > li > a{
+    font-size: 2rem;
+    color: #fff;
+  }
+  .container > .menu > ul > li > a span{
+    color: #fa6f32;
+  }
+  .container > .menu > ul > li > a:hover{
+    cursor: pointer;
+    color: #fa6f32;
   }
   .donation-section-container {
     width: 100%;
