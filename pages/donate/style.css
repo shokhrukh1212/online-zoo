@@ -103,6 +103,11 @@ header > .donate-panda {
   background-size: cover;
 }
 
+
+.container .menu{
+  display: none;
+}
+
 /*starting main donate section*/
 
 div.donation-section-container {

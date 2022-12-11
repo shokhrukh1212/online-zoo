@@ -49,6 +49,7 @@
     display: block !important;
     font-size: 1.3em;
     color: #fff;
+    z-index: 1;
   }
 
   header nav i:hover {

@@ -171,6 +171,10 @@ main button:hover {
   box-shadow: 5px 10px #767474;
 }
 
+.container .menu{
+  display: none;
+}
+
 /*starting backstage section*/
 
 .backstage {
