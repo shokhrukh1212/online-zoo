@@ -22,6 +22,7 @@
     width: 94%;
     margin: auto;
     justify-content: space-between;
+    padding-left: 0;
   }
   nav ul li.logo1 {
     width: 46.86px;
@@ -51,7 +52,28 @@
     display: none;
   }
 
-
+  nav .hamburger{
+    display: block;
+    z-index: 1;
+  }
+  .hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
   
   /*menu section*/
   .container > .menu{
@@ -90,6 +112,9 @@
   .container > .menu > ul > li > a:hover{
     cursor: pointer;
     color: #fa6f32;
+  }
+  .menu.active {
+    top: 0;
   }
 
 

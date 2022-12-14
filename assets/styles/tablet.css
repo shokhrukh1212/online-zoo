@@ -42,10 +42,32 @@
   header nav h1 {
     display: none;
   }
-  header nav i {
-    display: block !important;
+
+  nav .hamburger{
+    display: block;
     z-index: 1;
   }
+  .hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+
   header nav i:hover {
     cursor: pointer;
   }
@@ -80,7 +102,7 @@
   /*menu section*/
   .container > .menu{
     width: 80%;
-    height: 285px;
+    height: 280px;
     position: absolute;
     top: -100%;
     right: 0;
@@ -114,6 +136,9 @@
   .container > .menu > ul > li > a:hover{
     cursor: pointer;
     color: #fa6f32;
+  }
+  .menu.active {
+    top: 0;
   }
 
 

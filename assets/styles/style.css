@@ -94,15 +94,12 @@ nav h1 {
   height: 22px;
 }
 
-nav i {
-  color: #fff;
-  /* visibility: hidden; */
-  display: none !important;
+nav .hamburger{
+  display: none;
 }
-nav i:hover {
+nav .hamburger:hover{
   cursor: pointer;
 }
-
 /*starting main page*/
 
 main {

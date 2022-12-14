@@ -28,7 +28,8 @@ header nav {
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
+  padding-left: 220px;
 }
 header nav img {
   display: none !important;
@@ -38,6 +39,12 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+nav .hamburger{
+  display: none;
+}
+nav .hamburger:hover{
+  cursor: pointer;
 }
 
 nav ul li {
